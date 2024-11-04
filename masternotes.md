@@ -1,1 +1,2 @@
-# This is where I will keep careful track of my project workflow.
+# Master Notes for the RNASeq Analysis Pipeline
+
