@@ -2,7 +2,7 @@
 This file contains notest about the workflow for this RNASeq analysis of C. albicans. 
 
 # Project Data
-Data for this analysis 
+Data for this analysis was provided by Dr. Ronda Rolfes. The files we analyzed were RNA sequences present in wild type C. albicans grown on thiamine deficient media.
 
 # FastQC
 We first analyzed the raw sequence data with FastQC to determine an optimal trimming strategy.
