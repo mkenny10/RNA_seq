@@ -1,5 +1,5 @@
 # Master Notes for the RNASeq Analysis Pipeline
-This file contains notest about the workflow for this RNASeq analysis of C. albicans. 
+This file contains notes about the workflow for this RNASeq analysis of *C. albicans*. 
 
 # Project Objectives
 This project seeks to determine the differential gene expression of the human commensal yeast, *Candida albicans*, when grown in the presence and absence of thiamine. Six total samples were included in this analysis: WTA1, WTB1, and WTC1, which were grown in the presence of thiamine, and WTA2, WTB2, and WTC2, which were grown in the absence of thiamine. 
