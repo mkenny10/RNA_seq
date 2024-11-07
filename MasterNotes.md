@@ -62,12 +62,14 @@ With these indices, we then performed sequence alignment into a .sam file, using
 We then converted this .sam file into a .bam file and sorted it withsamtools, using the following code:
 
 `
+
 $module load samtools
 
 $samtools view -S -b WTA2.sam > WTA2.bam
 $samtools WTA2.bam -o WTA.srt
 
 $module unload samtools
+
 `
 
 
