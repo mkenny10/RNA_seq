@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=bowtie2 --output=z01.%x
+#SBATCH --mail-type=END,FAIL --mail-user=mjk336@georgetown.edu
+#SBATCH --nodes=1 --ntasks=1 --cpus-per-task=1 --time=72:00:00
+#SBATCH --mem=4G
+
+#-----------------------------------------------------------------------------#
+# This script runs bowtie2 to align RNAseq reads to a reference genome #
+#-----------------------------------------------------------------------------#
+
+module load bowtie2/2.5.3
+
+#- RUN bowtie2----------------------------------------------------------------#
+
+bowtie2 -x CalbID \
+-1 WTA2_1.trPE.fq \
+-2 WTA2_2.trPE.fq \
+-S WTA2.sam
+
+#----------module unload-------------------------------------------------------#
+module unload bowtie2/2.5.3
+#- FIN -----------------------------------------------------------------------#
