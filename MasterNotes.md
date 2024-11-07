@@ -49,27 +49,25 @@ This post-trimming analysis showed an improved quality per base, less noise in t
 # Sequence Alignment
 With the quality of our sequences improved, we began sequence alignment with the *C. albicans* reference genome, GCF_000182965.3_ASM18296v3_genomic.fna, obtained from NCBI Databases. To perform this alignment, we used bowtie2/2.5.3, first building our indices from the reference genome:
 
-`
+```
 $module load bowtie2/2.5.3
 
 $bowtie2-build GCF_000182965.3_ASM18296v3_genomic.fna CalbID
 
 $module unload bowtie2/2.5.3
-`
+```
 
 With these indices, we then performed sequence alignment into a .sam file, using the script provided in the attached run_bowtie2 file.
 
 We then converted this .sam file into a .bam file and sorted it withsamtools, using the following code:
 
-`
-
+```
 $module load samtools
 
 $samtools view -S -b WTA2.sam > WTA2.bam
 $samtools WTA2.bam -o WTA.srt
 
 $module unload samtools
-
-`
+```
 
 
