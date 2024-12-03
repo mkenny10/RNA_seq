@@ -1,0 +1,50 @@
+#!/bin/bash
+#SBATCH --job-name=htseq --output=z01.%x
+#SBATCH --mail-type=END,FAIL --mail-user=mjk336@georgetown.edu
+#SBATCH --nodes=1 --ntasks=1 --cpus-per-task=1 --time=72:00:00
+#SBATCH --mem=4G
+
+#-----------------------------------------------------------------------------#
+# This script runs htseq to count the number of transcripts for each gene annotation #
+#-----------------------------------------------------------------------------#
+
+source activate htseq
+
+#- Set variables --------------------------------------------------------------#
+
+htseq=/home/mjk336/.conda/envs/htseq/bin/htseq-count
+bam=/home/mjk336/WTA2.srt.bam
+annotation=/home/mjk336/GCF_000182965.3_ASM18296v3_genomic.gtf
+
+
+#- RUN bowtie2----------------------------------------------------------------#
+
+#!/bin/bash
+#SBATCH --job-name=htseq --output=z01.%x
+#SBATCH --mail-type=END,FAIL --mail-user=mjk336@georgetown.edu
+#SBATCH --nodes=1 --ntasks=1 --cpus-per-task=1 --time=72:00:00
+#SBATCH --mem=4G
+
+#-----------------------------------------------------------------------------#
+# This script runs htseq to count the number of transcripts for each gene annotation #
+#-----------------------------------------------------------------------------#
+
+source activate htseq
+
+#- Set variables --------------------------------------------------------------#
+
+htseq=/home/mjk336/.conda/envs/htseq/bin/htseq-count
+input_bam=/home/mjk336/WTA2.srt.bam.bai
+annotation_gtf=/home/mjk336/GCF_000182965.3_ASM18296v3_genomic.gtf
+
+
+#- RUN bowtie2----------------------------------------------------------------#
+
+$htseq-count -f bam -r name \
+$input_bam \
+$annotation_gtf \
+> htseqcount.txt
+
+#- FIN -----------------------------------------------------------------------#
+
+#- FIN -----------------------------------------------------------------------#
