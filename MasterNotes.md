@@ -87,6 +87,6 @@ Sequence alignment results for all six samples are compiled in the following doc
 
 https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?gid=0#gid=0
 
-
-
+# RNA Seq
+After sequence alignment, we performed our RNA Seq analysis with the R Software HTSeq.
 
