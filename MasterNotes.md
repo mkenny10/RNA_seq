@@ -47,7 +47,8 @@ See the attached WTA2_1.trPE.fastqc.html file for reference.
 This post-trimming analysis showed an improved quality per base, less noise in the beginning of the reads, and successful removal of the adapter sequences.
 
 # Sequence Alignment
-With the quality of our sequences improved, we began sequence alignment with the *C. albicans* reference genome, GCF_000182965.3_ASM18296v3_genomic.fna, obtained from NCBI Databases. To perform this alignment, we used bowtie2/2.5.3, first building our indices from the reference genome:
+With the quality of our sequences improved, we began sequence alignment with the *C. albicans* reference genome, GCF_000182965.3_ASM18296v3_genomic.fna, obtained from NCBI Databases. The aboslute path to this file is https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/7
+35/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.gff.gz. To perform this alignment, we used bowtie2/2.5.3, first building our indices from the reference genome:
 
 ```
 $module load bowtie2/2.5.3
