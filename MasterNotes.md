@@ -116,11 +116,17 @@ The locus tags from this file were stored in another file called signif_geneIDs 
 grep -wFf signif_geneIDs GCF_000182965.3_ASM18296v3_genomic.gtf|grep "protein_coding"|cut -f9|cut -d ";" -f1,3,5 > signif_gene_annot_info
 ```
 
-The resultant gene names and IDs are included in the attached file signif_gene_annot_inf, and this information was appended to the signif_TH-vTH+.csv file to create the modified calb_TH-_v_TH+_allgenes.csv file (also within DESeq2_analysis).
+The resultant gene names and IDs are included in the attached file signif_gene_annot_inf, and this information was appended to the signif_TH-vTH+.csv file.
 
-We input these gene names and IDs into the Candida genome page, http://www.candidagenome.org/, and UniProt, https://www.uniprot.org/, to determine the biological functions of these differentially expressed genes. These results were again appended to the calb_TH-_v_TH+_allgenes.csv file.
+We input these gene names and IDs into the Candida genome page, http://www.candidagenome.org/, and UniProt, https://www.uniprot.org/, to determine the biological functions of these differentially expressed genes. These results were again appended to the signif_TH-vTH+.csv file.
 
 # Gene Ontology Enrichment
+
+The gene IDs, parsed from the NCBI gtf file, were input into PANTHER classification system (https://www.pantherdb.org/tools/compareToRefList.jsp) to perform a gene ontology enrichment analysis.
+
+This analysis demonstrated that, among the upregulated genes in the thiamine deficient condition, there was a statistically significant number of genes involved in the thiamine biosynthetic pathway as well as the pyridoxal phophate biosynthetic pathways (adjusted p = 1.11 x 10^-07 and 9.19 x 10^-03, respectively). 
+
+This result suggests that when thiamine is absent in its environment *C. albicans* upregulates its own production of thiamine to maintain adequate levels for functioning. Thiamine is an important cofactor in enzymatic function, with roles in the central metabolic pathway. This makes maintaining thiamine levels, either through the environment or through biosynthesis, a priority for survival.
 
 # Discussion
 
