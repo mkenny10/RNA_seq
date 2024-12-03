@@ -49,7 +49,8 @@ This post-trimming analysis showed an improved quality per base, less noise in t
 # Sequence Alignment
 With the quality of our sequences improved, we began sequence alignment with the *C. albicans* reference genome, GCF_000182965.3_ASM18296v3_genomic.fna, obtained from NCBI Databases. 
 
-The aboslute path to this file is https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.gff.gz. 
+The aboslute path to this file is:
+https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.gff.gz. 
 
 To perform this alignment, we used bowtie2/2.5.3, first building our indices from the reference genome:
 
@@ -73,5 +74,11 @@ $samtools WTA2.bam -o WTA.srt
 
 $module unload samtools
 ```
+
+Sequence alignment results for all six samples are compiled in the following document:
+
+https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?gid=0#gid=0
+
+
 
 
