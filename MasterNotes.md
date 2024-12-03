@@ -38,18 +38,26 @@ Notable trimming parameters include:
 - SLIDINGWINDOW:4:15 , which removed reads containing sequences of 4 bases with an average Phred quality score of 15 or less
 - MINLEN:75 , which removed any reads of less than 75 bases
 
-
 # Post-Trimming FastQC
 We again used FastQC to analyze the quality of the reads, this time on the files generated from sequence trimming. The same code was used as above.
 
 See the attached WTA2_1.trPE.fastqc.html file for reference.
 
-This post-trimming analysis showed an improved quality per base, less noise in the beginning of the reads, and successful removal of the adapter sequences.
+The results of the trimming strategy for all six samples are compiled in the following document:
+
+https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0
+
+Prior to trimming, there were 21972519 reads, with poor per-base sequence content, high sequence duplication, and adapter contamination.
+
+After trimming, there were 21012870 reads, with good per-base sequence content, low sequence duplication, and no adapter contamination.
+
+This represents a loss of 959649 reads, with 95.63% reads retained, in addition to a significant improvement in per-base read quality, reduction in duplicate sequences, and removal of adapter contamination.
 
 # Sequence Alignment
 With the quality of our sequences improved, we began sequence alignment with the *C. albicans* reference genome, GCF_000182965.3_ASM18296v3_genomic.fna, obtained from NCBI Databases. 
 
 The aboslute path to this file is:
+
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.gff.gz. 
 
 To perform this alignment, we used bowtie2/2.5.3, first building our indices from the reference genome:
