@@ -87,6 +87,20 @@ Sequence alignment results for all six samples are compiled in the following doc
 
 https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?gid=0#gid=0
 
-# RNA Seq
-After sequence alignment, we performed our RNA Seq analysis with the R Software HTSeq.
+# High-throughput Sequence Analysis
+After sequence alignment, we next counted the number of reads per gene using the software HTSeq. This required creating a conda environment in the local terminal with the following code:
+
+```
+$module load anaconda3
+$conda create --name htseq
+$conda init
+$module load anaconda3
+$conda activate htseq
+$conda install -c bioconda htseq
+```
+
+The slurm script for running this HTSeq analysis is included in the attached file run_htseq. 
+
+# Differential Expression Analysis
+We next performed our RNA Seq analysis with the R Software DESeq2. The code used for this analysis is included in the attached file, calb_DESeq_script_FINAL.R. HtSeq
 
