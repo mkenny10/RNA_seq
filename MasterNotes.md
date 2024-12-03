@@ -108,7 +108,7 @@ The output files of this analysis are included in the attached file DESeq2_analy
 
 # Gene IDs
 
-The 14 genes identified as having significantly altered expression in thiamine deficient conditions were stored in a table in the attached file signif_TH-vTH+ (within DESeq2_analysis).
+The 14 genes identified as having significantly altered expression in thiamine deficient conditions were stored in a table in the attached file signif_TH-vTH+.csv (within DESeq2_analysis).
 
 The locus tags from this file were stored in another file called signif_geneIDs in the command line. These locus tags were used to parse the NCBI gtf file for the gene names and gene IDs of this differentially expressed genes, using the following code:
 
@@ -116,7 +116,7 @@ The locus tags from this file were stored in another file called signif_geneIDs 
 grep -wFf signif_geneIDs GCF_000182965.3_ASM18296v3_genomic.gtf|grep "protein_coding"|cut -f9|cut -d ";" -f1,3,5 > signif_gene_annot_info
 ```
 
-The resultant gene names and IDs are included in the attached file signif_gene_annot_info, and this information was appended to the signif_TH-vTH+ file to create the modified calb_TH-_v_TH+_allgenes file.
+The resultant gene names and IDs are included in the attached file signif_gene_annot_info, and this information was appended to the signif_TH-vTH+.csv file to create the modified calb_TH-_v_TH+_allgenes file (also within DESeq2_analysis).
 
 # Gene Ontology Enrichment
 
