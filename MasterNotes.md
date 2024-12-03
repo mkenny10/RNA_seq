@@ -118,6 +118,8 @@ grep -wFf signif_geneIDs GCF_000182965.3_ASM18296v3_genomic.gtf|grep "protein_co
 
 The resultant gene names and IDs are included in the attached file signif_gene_annot_info, and this information was appended to the signif_TH-vTH+.csv file to create the modified calb_TH-_v_TH+_allgenes file (also within DESeq2_analysis).
 
+We input these gene names and IDs into the Candida genome page, http://www.candidagenome.org/, and UniProt, https://www.uniprot.org/, to determine the biological functions of these differentially expressed genes. These results were again appended to the 
+
 # Gene Ontology Enrichment
 
 # Discussion
