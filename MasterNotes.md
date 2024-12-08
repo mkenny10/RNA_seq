@@ -121,10 +121,10 @@ We next performed a differential expression analysis with the R Software DESeq2.
 
 The output files of this analysis are included in the attached file DESeq2_analysis, and are depicted below:
 
-## Figure 1: PCA Plot for Differential Gene Expression of Thiamine + and - *C. albicans*
+## Figure 1: PCA Plot for Differential Gene Expression of Thiamine + and - Conditions in *C. albicans*
 ![PCA Plot](https://github.com/user-attachments/assets/fb9634ac-17cf-47c3-b14e-5692cc7859f0 "PCA Plot for Differential Gene Expression of Thiamine + and - *C. albicans*")
 
-## Figure 2: Volcano Plot for Differential Gene Expression of Thiamine + and - *C. albicans*
+## Figure 2: Volcano Plot for Differential Gene Expression of Thiamine + and - Conditions in *C. albicans*
 ![Volcano Plot](https://github.com/user-attachments/assets/4ee3d004-af48-4ef2-9d6b-99b4d0ee8cee)
 
 
