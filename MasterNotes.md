@@ -119,7 +119,9 @@ The following reads were not able to be assigned to a specific gene:
 # Differential Expression Analysis
 We next performed a differential expression analysis with the R Software DESeq2.The code used for this analysis is included in the attached file, calb_DESeq_script_FINAL.R.
 
-The output files of this analysis are included in the attached file DESeq2_analysis. 
+The output files of this analysis are included in the attached file DESeq2_analysis, and are depicted below:
+
+![Alt text of the image]("C:\Users\matth\OneDrive\Desktop\DESeq2_analysis\TH-vTH+_pcaplot.png")
 
 # Gene IDs
 
