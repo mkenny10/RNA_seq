@@ -89,6 +89,8 @@ Sequence alignment results for all six samples are compiled in the following doc
 
 https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?gid=0#gid=0
 
+For the WTA2 sample, all 21012870 reads left over from trimming were detected by bowtie, and the overall alignment rate for the sample was 98.45%. Across all six samples included in the analysis, overall alignment rates were approximately 98%, which represents high overall alignment for all included samples.
+
 # High-throughput Sequence Analysis
 After sequence alignment, we next counted the number of reads per gene using the software HTSeq. This required creating a conda environment in the local terminal with the following code:
 
