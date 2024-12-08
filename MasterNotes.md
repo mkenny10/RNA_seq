@@ -124,11 +124,7 @@ The output files of this analysis are included in the attached file DESeq2_analy
 
 ![PCA Plot](https://github.com/user-attachments/assets/fb9634ac-17cf-47c3-b14e-5692cc7859f0 "PCA Plot for Differential Gene Expression of Thiamine + and - *C. albicans*")
 
-![R_volcano_plot_correct.pdf](https://github.com/user-attachments/files/18053611/R_volcano_plot_correct.pdf)
-
-
-
-
+![Volcano Plot](https://github.com/user-attachments/assets/4ee3d004-af48-4ef2-9d6b-99b4d0ee8cee)
 
 
 
