@@ -121,7 +121,7 @@ We next performed a differential expression analysis with the R Software DESeq2.
 
 The output files of this analysis are included in the attached file DESeq2_analysis, and are depicted below:
 
-![Alt text of the image](C:\Users\matth\OneDrive\Desktop\DESeq2_analysis\TH-vTH+_pcaplot.png)
+![PCA Plot](https://github.com/user-attachments/assets/fb9634ac-17cf-47c3-b14e-5692cc7859f0)
 
 # Gene IDs
 
