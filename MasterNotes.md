@@ -41,7 +41,7 @@ Notable trimming parameters include:
 - MINLEN:75 , which removed any reads of less than 75 bases
 
 # Post-Trimming FastQC
-We again used FastQC to analyze the quality of the reads, this time on the files generated from sequence trimming. The same code was used as above.
+We again used FastQC to analyze the quality of the reads, this time on the files generated from sequence trimming. The same code was used as above in the initial FastQC section.
 
 See the attached WTA2_1.trPE.fastqc.html file for reference.
 
