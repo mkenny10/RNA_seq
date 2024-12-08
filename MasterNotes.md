@@ -72,9 +72,9 @@ $bowtie2-build GCF_000182965.3_ASM18296v3_genomic.fna CalbID
 $module unload bowtie2/2.5.3
 ```
 
-With these indices, we then performed sequence alignment into a .sam file, using the script provided in the attached run_bowtie2 file.
+With these indices, we then performed sequence alignment into a .sam file, using the slurm script provided in the attached run_bowtie2 file.
 
-We then converted this .sam file into a .bam file and sorted it withsamtools, using the following code:
+We then converted this .sam file into a .bam file and sorted it with samtools, using the following code:
 
 ```
 $module load samtools
