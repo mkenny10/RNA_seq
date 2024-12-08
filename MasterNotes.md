@@ -177,5 +177,7 @@ This result suggests that when thiamine is absent in its environment *C. albican
 
 # Conclusion
 
-This RNASeq analysis demonstrated that in the absence of environmental thiamine, *Candida albicans* upregulates endogenous thiamine biosynthesis pathways to maintain adequate levels of thiamine for metabolic functioning. These results suggest the ability of *C. albicans* to maintain homeostasis during periods of environmental stress and also affirm the crucial role of thiamine to cellular functioning. Future study should examine the mechanisms by which thiamine biosynthesis enzymes are upregulated in *C. albicans*, identifying transcription factors present in higher concentrations in Thi- conditions.
+This RNASeq analysis demonstrated that in the absence of environmental thiamine, *Candida albicans* upregulates endogenous thiamine biosynthesis pathways to maintain adequate levels of thiamine for metabolic functioning. These results suggest the ability of *C. albicans* to maintain homeostasis during periods of environmental stress and also affirm the crucial role of thiamine to cellular functioning. 
+
+Future study should examine the mechanisms by which thiamine biosynthesis enzymes are upregulated in *C. albicans* as well as how activation of these pathways might contribute to *C. albicans* transition between commensal and pathogenic states. Understanding the mechanisms of this transition may contribute to the development of more effective treatments for *C. albicans* infections, particularly in the immunocompromised.
 
