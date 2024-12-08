@@ -121,18 +121,25 @@ We next performed a differential expression analysis with the R Software DESeq2.
 
 The output files of this analysis are included in the attached file DESeq2_analysis, and are depicted below:
 
-
+## Figure 1: PCA Plot for Differential Gene Expression of Thiamine + and - *C. albicans*
 ![PCA Plot](https://github.com/user-attachments/assets/fb9634ac-17cf-47c3-b14e-5692cc7859f0 "PCA Plot for Differential Gene Expression of Thiamine + and - *C. albicans*")
 
+## Figure 2: Volcano Plot for Differential Gene Expression of Thiamine + and - *C. albicans*
 ![Volcano Plot](https://github.com/user-attachments/assets/4ee3d004-af48-4ef2-9d6b-99b4d0ee8cee)
 
+
+The PCA Plot shows that the first and second principle components explain about 97% of the variance in the data. The Thi+ and Thi- samples are clustered together around similar values of Principal Component 2, at about +10 and -10, respectively. For Principal Component 1, two of the Thi+ and two of the Thi- samples are clustered around a value of +20, whereas one of each of these samples appear to be outliers at negative values of Principal Component 1. These results indicate that, although there is not a great difference in the variance in expression between the two groups, the clustering of the Thi+ and Thi- samples around different values for Principal Component 2 may indicate a small difference in gene expression.
+
+The Volcano Plot affirms these findings. Most of the genes, represented by points on the plot, demonstrate insignificant difference in expression between the two experimental conditions. This can be determined by observing that their p-values fall below the threshold for significance indicated on the plot. Just 14 genes appear to have significantly different expresssion in the thiamine deficient samples, and all of these genes have positive log2-fold changes, meaning that their expression is upregulated in absence of thiamine. 
+
+Given the finding that 14 *C. albicans* genes are upregulated in the absence of thiamine, the next step in our analysis was to determine the identity of these genes to discern any patterns in their function.
 
 
 # Gene IDs
 
-The 14 genes identified as having significantly altered expression in thiamine deficient conditions were stored in a table in the attached file signif_TH-vTH+.csv (within DESeq2_analysis).
+The 14 genes identified as having significantly altered expression in thiamine deficient conditions were stored in a table in the attached file signif_TH-vTH+.csv (within DESeq2_analysis), using additional code in the attached calb_DESeq_script_FINAL.R file.
 
-The locus tags from this file were stored in another file called signif_geneIDs in the command line. These locus tags were used to parse the NCBI gtf file for the gene names and gene IDs of this differentially expressed genes, using the following code:
+The locus tags from this file were stored in another file called signif_geneIDs in the command line. These locus tags were used to parse the NCBI gtf file, linked above, for the gene names and gene IDs of this differentially expressed genes. The following code was used for parsing:
 
 ```
 grep -wFf signif_geneIDs GCF_000182965.3_ASM18296v3_genomic.gtf|grep "protein_coding"|cut -f9|cut -d ";" -f1,3,5 > signif_gene_annot_info
@@ -140,11 +147,20 @@ grep -wFf signif_geneIDs GCF_000182965.3_ASM18296v3_genomic.gtf|grep "protein_co
 
 The resultant gene names and IDs are included in the attached file signif_gene_annot_inf, and this information was appended to the signif_TH-vTH+.csv file.
 
-We input these gene names and IDs into the Candida genome page, http://www.candidagenome.org/, and UniProt, https://www.uniprot.org/, to determine the biological functions of these differentially expressed genes. These results were again appended to the signif_TH-vTH+.csv file.
+We input these gene names and IDs into the Candida genome page, http://www.candidagenome.org/, and UniProt, https://www.uniprot.org/, to determine the biological functions of these differentially expressed genes. These results were again appended to the signif_TH-vTH+.csv file under the header "Biological Function". This file is linked below for analysis:
+
+![signif_TH-vTH+.csv](https://github.com/user-attachments/files/18053681/signif_TH-vTH%2B.csv).
+
+From parsing the NCBI gtf file, we identified 9 of the 14 genes' associated gene codes. Identification of these 9 genes' functions in UniProt demonstrated that the majority of these genes have functions involved in the thiamine biosynthesis pathway. This result is consistent with out hypothesis that, in a thiamine deficient environment, *C. albicans* will upregulate expression of genes required for endogenous synthesis of thiamine. Thiamine, or vitamin B1, is a crucial cofactor involved in the central metabolic pathway, meaning that its absence could be deleterious to *C albicans* and its ability to produce energy for cellular processes. Therefore, in the absence of environmental thiamine, it makes sense that endogenous thiamine synthesis would be upregulated to compensate for environmental deficits.
+
+It should also be noted that several of these enzymes remain putative, with further structural and functional analysis needed to confirm their identities. Additionally, two genes DUO1 and ERG20, were determined to be involved in mitosis and sterol biosynthesis, respectively. These two growth processes seem somewhat counterintuitve for an organism in nutrient deficient conditions, making their upregulation somewhat unexpected. Additional research should be done to identify their roles in cellular maintenance in thiamine deplete conditions.
+
 
 # Gene Ontology Enrichment
 
-The gene IDs, parsed from the NCBI gtf file, were input into PANTHER classification system (https://www.pantherdb.org/tools/compareToRefList.jsp) to perform a gene ontology enrichment analysis.
+Given the fact that the majority of the upregulated genes appear to be involved in thiamine biosynthesis, we next sought to determine whether this result is statistically significant, or merely a product of random chance. To do so, we performed a gene ontology enrichment analysis.
+
+To do so, the gene IDs, included in teh f file, were input into PANTHER classification system (https://www.pantherdb.org/tools/compareToRefList.jsp) to perform a gene ontology enrichment analysis.
 
 This analysis demonstrated that, among the upregulated genes in the thiamine deficient condition, there was a statistically significant number of genes involved in the thiamine biosynthetic pathway as well as the pyridoxal phophate biosynthetic pathways (adjusted p = 1.11 x 10^-07 and 9.19 x 10^-03, respectively). 
 
