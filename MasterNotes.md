@@ -108,10 +108,13 @@ The slurm script for running this HTSeq analysis is included in the attached fil
 The following reads were not able to be assigned to a specific gene:
 
 - __no_feature    9820912
-    - (reads that could not be assigned to any gene)
-- __ambiguous     18124      (reads that aligned to multiple genes)
-- __too_low_aQual 1114728    (reads with alignment quality lower than 10)
-- __not_aligned   156874     (reads with no alignment in the SAM file)
+    - reads that could not be assigned to any gene
+- __ambiguous     18124
+      - reads that aligned to multiple genes
+- __too_low_aQual 1114728
+      - reads with alignment quality lower than 10
+- __not_aligned   156874
+      - reads with no alignment in the SAM file
 
 # Differential Expression Analysis
 We next performed a differential expression analysis with the R Software DESeq2.The code used for this analysis is included in the attached file, calb_DESeq_script_FINAL.R.
