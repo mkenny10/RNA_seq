@@ -160,11 +160,22 @@ It should also be noted that several of these enzymes remain putative, with furt
 
 Given the fact that the majority of the upregulated genes appear to be involved in thiamine biosynthesis, we next sought to determine whether this result is statistically significant, or merely a product of random chance. To do so, we performed a gene ontology enrichment analysis.
 
-To do so, the gene IDs, included in teh f file, were input into PANTHER classification system (https://www.pantherdb.org/tools/compareToRefList.jsp) to perform a gene ontology enrichment analysis.
+To do so, the gene IDs, included in the signif_TH-vTH+.csv. file (linked in previous section), were input into PANTHER classification system (https://www.pantherdb.org/tools/compareToRefList.jsp), using the statistical overrepresentation test. Parameters used include:
+
+- Reference List: Candida albicans
+- Annotation Data Set: GO biological process complete
+- Test Type: Fisher's Exact
+- Correction: Calculate False Discovery Rate
+
+The following output file was generated:
+
+https://www.pantherdb.org/tools/compareToRefList.jsp
 
 This analysis demonstrated that, among the upregulated genes in the thiamine deficient condition, there was a statistically significant number of genes involved in the thiamine biosynthetic pathway as well as the pyridoxal phophate biosynthetic pathways (adjusted p = 1.11 x 10^-07 and 9.19 x 10^-03, respectively). 
 
-This result suggests that when thiamine is absent in its environment *C. albicans* upregulates its own production of thiamine to maintain adequate levels for functioning. Thiamine is an important cofactor in enzymatic function, with roles in the central metabolic pathway. This makes maintaining thiamine levels, either through the environment or through biosynthesis, a priority for survival.
+This result suggests that when thiamine is absent in its environment *C. albicans* upregulates endogenous production of the vitamin to maintain adequate levels for functioning. Thiamine is an important coenzyme in enzymatic function, with roles in the central metabolic pathway. This makes maintaining thiamine levels, either through the environment or through biosynthesis, a priority for survival.
 
-# Discussion
+# Conclusion
+
+This RNASeq analysis demonstrated that in the absence of environmental thiamine, *Candida albicans* upregulates endogenous thiamine biosynthesis pathways to maintain adequate levels of thiamine for metabolic functioning. These results suggest the ability of *C. albicans* to maintain homeostasis during periods of environmental stress and also affirm the crucial role of thiamine to cellular functioning. Future study should examine the mechanisms by which thiamine biosynthesis enzymes are upregulated in *C. albicans*, identifying transcription factors present in higher concentrations in Thi- conditions.
 
