@@ -9,7 +9,7 @@ For the purposes of this workflow, we only performed our analyses on the WTA2 sa
 # Project Data
 Data for this analysis was provided by Dr. Ronda Rolfes. The files we analyzed were reads of *C. albicans* RNA, sequenced with Illumina technology. Our group utilized two data files, WTA2_1.fq.gz and WTA2_2.fq.gz, which represent the forward and reverse reads of the transcripts for the WTA2 sample.
 
-The reference genome we used for alignment, GCF_000182965.3, was obtained from NCBI database at the following link:
+The reference genome we used for alignment, GCF_000182965.3, was obtained from NCBI databases at the following link:
 
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/943/734/735/GCF_943734735.2_idAnoGambNW_F1_1/GCF_943734735.2_idAnoGambNW_F1_1_genomic.gff.gz.
 
