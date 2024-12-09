@@ -137,7 +137,7 @@ Given the finding that 14 *C. albicans* genes are upregulated in the absence of 
 
 # Gene IDs
 
-The 14 genes identified as having significantly altered expression in thiamine deficient conditions were stored in a table in the attached file signif_TH-vTH+.csv (within DESeq2_analysis), using additional code in the attached calb_DESeq_script_FINAL.R file.
+The 14 genes identified as having significantly altered expression in thiamine deficient conditions were stored in a table in the attached file signif_TH-vTH+.csv (within DESeq2_analysis folder), using additional code in the attached calb_DESeq_script_FINAL.R file.
 
 The locus tags from this file were stored in another file called signif_geneIDs in the command line. These locus tags were used to parse the NCBI gtf file, linked above, for the gene names and gene IDs of this differentially expressed genes. The following code was used for parsing:
 
