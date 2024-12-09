@@ -103,7 +103,7 @@ $conda activate htseq
 $conda install -c bioconda htseq
 ```
 
-The slurm script for running this HTSeq analysis is included in the attached file run_htseq. The output files are included in the attached htseq_counts file, and the resulting counts of reads per gene were stored in the output file htseq_counts.txt.
+The slurm script for running this HTSeq analysis is included in the attached file run_htseq. The output files are included in the attached htseq_counts folder, and the resulting counts of reads per gene were stored in the output file htseq_counts.txt.
 
 The following reads were not able to be assigned to a specific gene:
 
