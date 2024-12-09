@@ -160,7 +160,7 @@ It should also be noted that several of these enzymes remain putative, with furt
 
 Given the fact that the majority of the upregulated genes appear to be involved in thiamine biosynthesis, we next sought to determine whether this result is statistically significant, or merely a product of random chance. To do so, we performed a gene ontology enrichment analysis.
 
-To do so, the gene IDs, included in the signif_TH-vTH+.csv. file (linked in previous section), were input into PANTHER classification system (https://www.pantherdb.org/tools/compareToRefList.jsp), using the statistical overrepresentation test. Parameters used include:
+The 14 gene IDs, included in the signif_TH-vTH+.csv. file (linked in previous section), were input into PANTHER classification system (https://www.pantherdb.org/tools/compareToRefList.jsp), using the statistical overrepresentation test. Parameters used include:
 
 - Reference List: Candida albicans
 - Annotation Data Set: GO biological process complete
@@ -171,13 +171,13 @@ The following output file was generated:
 
 https://www.pantherdb.org/tools/compareToRefList.jsp
 
-This analysis demonstrated that, among the upregulated genes in the thiamine deficient condition, there was a statistically significant number of genes involved in the thiamine biosynthetic pathway as well as the pyridoxal phophate biosynthetic pathways (adjusted p = 1.11 x 10^-07 and 9.19 x 10^-03, respectively). 
+This analysis demonstrated that, among the upregulated genes in the thiamine deficient condition, there was a statistically significant number of genes involved in the thiamine biosynthetic pathway (adjusted p = 1.11 x 10^-07). 
 
-This result suggests that when thiamine is absent in its environment *C. albicans* upregulates endogenous production of the vitamin to maintain adequate levels for functioning. Thiamine is an important coenzyme in enzymatic function, with roles in the central metabolic pathway. This makes maintaining thiamine levels, either through the environment or through biosynthesis, a priority for survival.
+This result suggests that when thiamine is absent in the environment, *C. albicans* upregulates endogenous production of the vitamin to maintain adequate levels for functioning. Thiamine is an important coenzyme in enzymatic function, with roles in the central metabolic pathway. This makes maintaining thiamine levels, either through the environment or through biosynthesis, a priority for survival.
 
 # Conclusion
 
-This RNASeq analysis demonstrated that in the absence of environmental thiamine, *Candida albicans* upregulates endogenous thiamine biosynthesis pathways to maintain adequate levels of thiamine for metabolic functioning. These results suggest the ability of *C. albicans* to maintain homeostasis during periods of environmental stress and also affirm the crucial role of thiamine to cellular functioning. 
+This RNASeq analysis demonstrated that in the absence of environmental thiamine, *Candida albicans* upregulates endogenous thiamine biosynthesis pathways to maintain adequate levels of the vitamin for metabolic functioning. These results suggest the ability of *C. albicans* to maintain homeostasis during periods of environmental stress and also affirm the crucial role of thiamine in cellular functioning. 
 
-Future study should examine the mechanisms by which thiamine biosynthesis enzymes are upregulated in *C. albicans* as well as how activation of these pathways might contribute to *C. albicans* transition between commensal and pathogenic states. Understanding the mechanisms of this transition may contribute to the development of more effective treatments for *C. albicans* infections, particularly in the immunocompromised.
+Future study should examine the mechanisms by which thiamine biosynthesis enzymes are upregulated in *C. albicans* as well as how activation of these pathways might contribute to *C. albicans* transition between commensal and pathogenic states. Understanding the mechanisms of this transition may contribute to the development of more effective treatments for *C. albicans* infections. This may be of particular importance to protection of immunocompromised populations like transplant recipients, chemotherapy patients, and those living with HIV/AIDS, all of whom are at increased risk of developing pathogenic *C. albicans* infections.
 
